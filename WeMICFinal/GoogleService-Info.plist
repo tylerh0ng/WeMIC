@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>94935512886-a73e4qn9f88s7mqtl9f030bgucnh9kvq.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.94935512886-a73e4qn9f88s7mqtl9f030bgucnh9kvq</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDA5YUZVHfwcxMgeiztw3_O6DHXcXdn2Mo</string>
+	<key>GCM_SENDER_ID</key>
+	<string>94935512886</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.AlexLee.WeMICFinal</string>
+	<key>PROJECT_ID</key>
+	<string>wemic-f9613</string>
+	<key>STORAGE_BUCKET</key>
+	<string>wemic-f9613.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true></true>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false></false>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:94935512886:ios:fd3693ecec98ba2c</string>
+	<key>DATABASE_URL</key>
+	<string>https://wemic-f9613.firebaseio.com</string>
+</dict>
+</plist>

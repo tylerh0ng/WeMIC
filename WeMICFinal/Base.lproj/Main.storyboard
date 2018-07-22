@@ -1,0 +1,965 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="4zl-7J-Yrf">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Raleway-Regular.ttf">
+            <string>Raleway-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="FirstPage" id="BYZ-38-t0r" customClass="ViewController" customModule="WeMICFinal" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7MJ-ZI-whf" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
+                                <rect key="frame" x="71" y="302" width="288" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tree-70-xxl" translatesAutoresizingMaskIntoConstraints="NO" id="riG-mE-9nS">
+                                <rect key="frame" x="3" y="302" width="60" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Let's Get Started." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="gyX-M4-YND">
+                                <rect key="frame" x="16" y="122" width="343" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="42"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dow2x" translatesAutoresizingMaskIntoConstraints="NO" id="5fq-qe-81t">
+                                <rect key="frame" x="149" y="20" width="76" height="94"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="s8I-VC-ZtE" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
+                                <rect key="frame" x="71" y="399" width="288" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="lock-xxl" translatesAutoresizingMaskIntoConstraints="NO" id="sJj-LT-b7f">
+                                <rect key="frame" x="3" y="399" width="60" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Vw-Av-amU">
+                                <rect key="frame" x="30" y="613" width="314" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="18"/>
+                                <state key="normal" title="Don't have an account? Register Now!">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="o75-n0-0Ed" kind="show" id="6Rq-7h-Ysf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Y3-CQ-b6n">
+                                <rect key="frame" x="164" y="546" width="47" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="18"/>
+                                <state key="normal" title="Login">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="loginBTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="azA-XT-3fk"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="8wU-i1-Zjc"/>
+                    <connections>
+                        <outlet property="Email" destination="7MJ-ZI-whf" id="DQB-gG-9DG"/>
+                        <outlet property="LetsGetStarted" destination="gyX-M4-YND" id="77G-WE-ah5"/>
+                        <outlet property="Password" destination="s8I-VC-ZtE" id="t6g-wo-XzV"/>
+                        <outlet property="lock" destination="sJj-LT-b7f" id="qTC-ug-UZt"/>
+                        <outlet property="loginB" destination="4Y3-CQ-b6n" id="oLD-Lj-2eY"/>
+                        <outlet property="pineapple" destination="5fq-qe-81t" id="2Jh-mL-fhL"/>
+                        <outlet property="registration3" destination="6Vw-Av-amU" id="qus-Ah-9LQ"/>
+                        <outlet property="treeIcon" destination="riG-mE-9nS" id="Pd9-gi-3R4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1076" y="107.49625187406298"/>
+        </scene>
+        <!--Ststepreg View Controller-->
+        <scene sceneID="9Lk-0Y-GoO">
+            <objects>
+                <viewController id="o75-n0-0Ed" customClass="_ststepregViewController" customModule="WeMICFinal" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lmM-Xr-Rzx">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dow2x" translatesAutoresizingMaskIntoConstraints="NO" id="lfO-uv-Hjc">
+                                <rect key="frame" x="149" y="20" width="76" height="94"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JzZ-kf-hp8" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
+                                <rect key="frame" x="38" y="278" width="300" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="boc-Nc-mlD" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
+                                <rect key="frame" x="38" y="354" width="300" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1au-3v-waG" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
+                                <rect key="frame" x="38" y="430" width="300" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Email and Password?" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="B5f-iu-A7v">
+                                <rect key="frame" x="0.0" y="175" width="375" height="95"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="35"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aiy-OO-BI8">
+                                <rect key="frame" x="168" y="617" width="40" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="18"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="userPressedNext:" destination="o75-n0-0Ed" eventType="touchUpInside" id="KNg-Vo-Bmb"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="E5W-t0-tG0"/>
+                    </view>
+                    <connections>
+                        <outlet property="confirmPasswordField" destination="1au-3v-waG" id="SgY-af-LhA"/>
+                        <outlet property="emailField" destination="JzZ-kf-hp8" id="hw8-HO-g5E"/>
+                        <outlet property="goToSecond" destination="aiy-OO-BI8" id="lSA-Da-aQj"/>
+                        <outlet property="header" destination="B5f-iu-A7v" id="yPW-wK-uGu"/>
+                        <outlet property="passwordField" destination="boc-Nc-mlD" id="vhg-eh-tBG"/>
+                        <outlet property="pineapple" destination="lfO-uv-Hjc" id="pvd-hw-KZC"/>
+                        <segue destination="9lj-LS-fwx" kind="show" identifier="goToVerification" id="Ygi-7C-91y"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="veQ-HG-OX6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="892.80359820089961"/>
+        </scene>
+        <!--Email Verification Message-->
+        <scene sceneID="0uS-di-3C2">
+            <objects>
+                <viewController storyboardIdentifier="emailVerification" id="9lj-LS-fwx" customClass="emailVerificationMessage" customModule="WeMICFinal" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oqo-ls-nA8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="CIK-Dd-1Kj">
+                                <rect key="frame" x="16" y="218" width="343" height="230"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">A verification email has been sent to your account. Once you have verified your email you will be able to proceed with registration</string>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="25"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dow2x" translatesAutoresizingMaskIntoConstraints="NO" id="qK3-gM-bpl">
+                                <rect key="frame" x="149" y="20" width="76" height="94"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q3k-EN-NbC">
+                                <rect key="frame" x="126" y="566" width="131" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="25"/>
+                                <state key="normal" title="I'm verified!">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="nextButtonTapped:" destination="9lj-LS-fwx" eventType="touchUpInside" id="hwi-IY-pWv"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Lgj-3G-UCr"/>
+                    </view>
+                    <connections>
+                        <outlet property="nextButton" destination="q3k-EN-NbC" id="HDu-9t-2h4"/>
+                        <outlet property="pineapple" destination="qK3-gM-bpl" id="QaW-AM-wV8"/>
+                        <outlet property="verificationMessage" destination="CIK-Dd-1Kj" id="PDz-Kb-Uaq"/>
+                        <segue destination="Ikf-6O-LIO" kind="show" identifier="alreadyVerified" id="2DO-fo-oor"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="caQ-qy-jXW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="865" y="893"/>
+        </scene>
+        <!--Name Register-->
+        <scene sceneID="Hkr-FQ-fcd">
+            <objects>
+                <viewController id="Ikf-6O-LIO" customClass="nameRegister" customModule="WeMICFinal" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pgQ-Ia-hFb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dow2x" translatesAutoresizingMaskIntoConstraints="NO" id="CS9-L0-ntw">
+                                <rect key="frame" x="149" y="20" width="76" height="94"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="What's Your Name?" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="sxf-IQ-A0q">
+                                <rect key="frame" x="0.0" y="139" width="375" height="77"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="35"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Your full name will be visible to potential matches on wemic." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="aKK-RT-dac">
+                                <rect key="frame" x="67" y="244" width="240" height="69"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5M1-Iq-aqv" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
+                                <rect key="frame" x="31" y="355" width="312" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EBn-0A-KbA" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
+                                <rect key="frame" x="31" y="437" width="312" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sbV-nt-iku">
+                                <rect key="frame" x="267" y="579" width="40" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="18"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="nextButtonTapped:" destination="Ikf-6O-LIO" eventType="touchUpInside" id="TvD-Ma-gsr"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="6nc-K9-aWt"/>
+                    </view>
+                    <connections>
+                        <outlet property="disclaimer" destination="aKK-RT-dac" id="ouj-cE-bJn"/>
+                        <outlet property="firstName" destination="5M1-Iq-aqv" id="THY-oI-FQO"/>
+                        <outlet property="lastName" destination="EBn-0A-KbA" id="6FV-MG-TM1"/>
+                        <outlet property="nextButton" destination="sbV-nt-iku" id="ioR-Ha-xZf"/>
+                        <outlet property="pineapple" destination="CS9-L0-ntw" id="th2-aK-Jxw"/>
+                        <outlet property="whatsYoName" destination="sxf-IQ-A0q" id="1rb-wp-LUe"/>
+                        <segue destination="AHA-6T-hfb" kind="show" identifier="majorAndYear" id="TJd-QE-fFe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Aif-Pf-AZL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1629.5999999999999" y="892.80359820089961"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Mzs-h3-9VV">
+            <objects>
+                <viewController id="FH5-Nu-3vK" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Q71-Le-U1g">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bkv-u5-Jdu">
+                                <rect key="frame" x="119" y="152" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="K6f-c8-6Zs" appends="YES" id="wiH-Q3-5HP"/>
+                                </connections>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="yvo-hx-bAF"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1aq-Od-s3D" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="K6f-c8-6Zs"/>
+            </objects>
+            <point key="canvasLocation" x="1805" y="1733"/>
+        </scene>
+        <!--Class Year-->
+        <scene sceneID="NM2-BS-v9t">
+            <objects>
+                <viewController id="AHA-6T-hfb" customClass="classYear" customModule="WeMICFinal" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="AjM-nw-JiD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dow2x" translatesAutoresizingMaskIntoConstraints="NO" id="mIm-rO-eg1">
+                                <rect key="frame" x="149" y="20" width="76" height="94"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="What year are you?" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Ql-k2-lIn">
+                                <rect key="frame" x="0.0" y="142" width="375" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="25"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Let your peers know whether you are a freshman, sophomore, junior, senior, masters student, or graduate student!" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L1u-Vd-506">
+                                <rect key="frame" x="43" y="211" width="288" height="77"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VXA-s0-bSI" customClass="AIFlatSwitch" customModule="AIFlatSwitch">
+                                <rect key="frame" x="53" y="306" width="42" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="animatesOnTouch" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="strokeColor">
+                                        <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="trailStrokeColor">
+                                        <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nFR-gj-E97" customClass="AIFlatSwitch" customModule="AIFlatSwitch">
+                                <rect key="frame" x="53" y="366" width="42" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="animatesOnTouch" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="strokeColor">
+                                        <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="trailStrokeColor">
+                                        <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2ew-zy-C6x" customClass="AIFlatSwitch" customModule="AIFlatSwitch">
+                                <rect key="frame" x="53" y="426" width="42" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="animatesOnTouch" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="strokeColor">
+                                        <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="trailStrokeColor">
+                                        <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dfW-20-vmk" customClass="AIFlatSwitch" customModule="AIFlatSwitch">
+                                <rect key="frame" x="53" y="486" width="42" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="animatesOnTouch" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="strokeColor">
+                                        <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="trailStrokeColor">
+                                        <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XI8-y7-9bU" customClass="AIFlatSwitch" customModule="AIFlatSwitch">
+                                <rect key="frame" x="53" y="546" width="42" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="animatesOnTouch" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="strokeColor">
+                                        <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="trailStrokeColor">
+                                        <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Freshman" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="97z-1o-mP8">
+                                <rect key="frame" x="103" y="304" width="158" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Freshman" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qAU-YR-xVd">
+                                <rect key="frame" x="108" y="304" width="158" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Sophomore" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="av0-b5-Ggf">
+                                <rect key="frame" x="108" y="363" width="158" height="39.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Junior" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="gJ2-ow-bSV">
+                                <rect key="frame" x="108" y="423" width="158" height="39.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Master's" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="mde-nP-Mdw">
+                                <rect key="frame" x="108" y="543" width="158" height="39.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jOv-Sm-5ao">
+                                <rect key="frame" x="287" y="597" width="44" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="20"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="nextButtonTapped:" destination="AHA-6T-hfb" eventType="touchUpInside" id="TAn-kd-OJn"/>
+                                    <segue destination="CSh-u2-ppu" kind="show" id="64l-m4-GZb"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Senior" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="4yD-PP-TW0">
+                                <rect key="frame" x="108" y="479" width="158" height="39.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Ep7-6b-DV9"/>
+                    </view>
+                    <connections>
+                        <outlet property="frosh" destination="VXA-s0-bSI" id="zQP-tr-sxy"/>
+                        <outlet property="froshtext" destination="qAU-YR-xVd" id="eXc-xo-Tmh"/>
+                        <outlet property="junior" destination="2ew-zy-C6x" id="kOv-gT-4gp"/>
+                        <outlet property="juniortext" destination="gJ2-ow-bSV" id="EWS-0g-I9g"/>
+                        <outlet property="masters" destination="XI8-y7-9bU" id="L4E-id-UUV"/>
+                        <outlet property="masterstext" destination="mde-nP-Mdw" id="zOb-R1-4m5"/>
+                        <outlet property="moreInfo" destination="L1u-Vd-506" id="yjh-N4-Dq5"/>
+                        <outlet property="nextButton" destination="jOv-Sm-5ao" id="SHk-IA-4K0"/>
+                        <outlet property="pineapple" destination="mIm-rO-eg1" id="uxd-z2-kn3"/>
+                        <outlet property="senior" destination="dfW-20-vmk" id="iFW-bK-6cf"/>
+                        <outlet property="seniortext" destination="4yD-PP-TW0" id="5Cu-DN-49n"/>
+                        <outlet property="soph" destination="nFR-gj-E97" id="TQl-hi-ubm"/>
+                        <outlet property="sophtext" destination="av0-b5-Ggf" id="lie-T4-8ZQ"/>
+                        <outlet property="whatYear" destination="4Ql-k2-lIn" id="rlu-Rd-2Zo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7L7-mx-3zr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2357.5999999999999" y="889.20539730134942"/>
+        </scene>
+        <!--Sex And Sexual Orientation-->
+        <scene sceneID="qsF-ai-BzO">
+            <objects>
+                <viewController id="CSh-u2-ppu" customClass="sexAndSexualOrientation" customModule="WeMICFinal" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hA4-VY-ZKk">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dow2x" translatesAutoresizingMaskIntoConstraints="NO" id="eXg-EZ-Wse">
+                                <rect key="frame" x="149" y="20" width="76" height="94"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Gender " textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="87f-QV-7Lb">
+                                <rect key="frame" x="16" y="122" width="343" height="98"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="35"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4dZ-Cj-ODO">
+                                <rect key="frame" x="16" y="209" width="343" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">This information will help us find you potential matches. Your potential matches will be the only people who will be able to see this information.</string>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PnB-90-Dzi" customClass="AIFlatSwitch" customModule="AIFlatSwitch">
+                                <rect key="frame" x="43" y="345" width="52" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="strokeColor">
+                                        <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="trailStrokeColor">
+                                        <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="animatesOnTouch" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZQw-Lh-UeX" customClass="AIFlatSwitch" customModule="AIFlatSwitch">
+                                <rect key="frame" x="43" y="419" width="52" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="strokeColor">
+                                        <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="trailStrokeColor">
+                                        <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lwC-RH-q8z" customClass="AIFlatSwitch" customModule="AIFlatSwitch">
+                                <rect key="frame" x="43" y="493" width="52" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="strokeColor">
+                                        <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="trailStrokeColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="animatesOnTouch" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Male" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="G5c-ay-BBM">
+                                <rect key="frame" x="92" y="351" width="190" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="25"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Female" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="d8V-ES-OwS">
+                                <rect key="frame" x="92" y="423" width="190" height="45.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="25"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Gender Fluid" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="FJx-Et-cUx">
+                                <rect key="frame" x="92" y="496" width="190" height="45.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="25"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="850-0V-Dbv">
+                                <rect key="frame" x="160" y="582" width="55" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="25"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="nextButtonTapped:" destination="CSh-u2-ppu" eventType="touchUpInside" id="qPk-78-Mmt"/>
+                                    <segue destination="Ujd-l1-XyB" kind="show" id="xuv-vH-XMx"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="c0a-ms-Tvd"/>
+                    </view>
+                    <connections>
+                        <outlet property="female" destination="ZQw-Lh-UeX" id="qSy-8W-u1H"/>
+                        <outlet property="femaleText" destination="d8V-ES-OwS" id="Mdm-Xp-0oy"/>
+                        <outlet property="fluid" destination="lwC-RH-q8z" id="JSe-Is-UuB"/>
+                        <outlet property="fluidText" destination="FJx-Et-cUx" id="the-hD-PA3"/>
+                        <outlet property="headerInfo" destination="87f-QV-7Lb" id="AhL-V6-oQW"/>
+                        <outlet property="male" destination="PnB-90-Dzi" id="y7o-uT-sXZ"/>
+                        <outlet property="maleText" destination="G5c-ay-BBM" id="EhK-MP-8s7"/>
+                        <outlet property="moreInfo" destination="4dZ-Cj-ODO" id="KMh-iW-lbn"/>
+                        <outlet property="nextButton" destination="850-0V-Dbv" id="nBq-W2-cnq"/>
+                        <outlet property="pineapple" destination="eXg-EZ-Wse" id="qg8-NC-eqE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XUR-PX-LR7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3072.8000000000002" y="892.80359820089961"/>
+        </scene>
+        <!--Sexual Preferences-->
+        <scene sceneID="Qrz-KV-o8m">
+            <objects>
+                <viewController id="Ujd-l1-XyB" customClass="SexualPreferences" customModule="WeMICFinal" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qXK-MO-lPF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dow2x" translatesAutoresizingMaskIntoConstraints="NO" id="mKg-sG-sY8">
+                                <rect key="frame" x="149" y="20" width="76" height="94"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Which gender are you looking to match with?" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pDA-p0-GMi">
+                                <rect key="frame" x="38" y="122" width="301" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="25"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ZP1-ag-fu1">
+                                <rect key="frame" x="16" y="204" width="343" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Please let us know  what gender you would like to match with on WeMIC. This information  won't be shared publicly and only your poential matches will know.</string>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ToJ-FN-FJf" customClass="AIFlatSwitch" customModule="AIFlatSwitch">
+                                <rect key="frame" x="38" y="319" width="55" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="strokeColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="trailStrokeColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bEg-ge-rtc" customClass="AIFlatSwitch" customModule="AIFlatSwitch">
+                                <rect key="frame" x="38" y="411" width="55" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="strokeColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="trailStrokeColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IEz-ex-gDP" customClass="AIFlatSwitch" customModule="AIFlatSwitch">
+                                <rect key="frame" x="38" y="503" width="55" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="strokeColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="trailStrokeColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Male" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="K5r-LB-RSf">
+                                <rect key="frame" x="150" y="326" width="76" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Both" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="8cJ-f5-ShR">
+                                <rect key="frame" x="149" y="510" width="89" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w1J-xL-m66">
+                                <rect key="frame" x="284" y="607" width="40" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="18"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="nextButtonTapped:" destination="Ujd-l1-XyB" eventType="touchUpInside" id="7bs-TV-Vd3"/>
+                                    <segue destination="vg9-Oh-xsF" kind="show" id="KtL-Fr-VgO"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" text="Female" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="hMZ-lk-4UC">
+                                <rect key="frame" x="106" y="423" width="166" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Kfq-PJ-ns9"/>
+                    </view>
+                    <connections>
+                        <outlet property="bothButton" destination="IEz-ex-gDP" id="KFg-pR-gd3"/>
+                        <outlet property="bothText" destination="8cJ-f5-ShR" id="Bm7-cU-wqY"/>
+                        <outlet property="femaleButton" destination="bEg-ge-rtc" id="bqA-7a-ihU"/>
+                        <outlet property="femaleText" destination="hMZ-lk-4UC" id="mrY-kb-oZW"/>
+                        <outlet property="maleButton" destination="ToJ-FN-FJf" id="ypq-27-S0N"/>
+                        <outlet property="maleText" destination="K5r-LB-RSf" id="8iq-iX-CzL"/>
+                        <outlet property="moreInfo" destination="ZP1-ag-fu1" id="O9X-dy-Lfs"/>
+                        <outlet property="nextButton" destination="w1J-xL-m66" id="Het-6I-lfb"/>
+                        <outlet property="openingstatement" destination="pDA-p0-GMi" id="b33-WL-pRc"/>
+                        <outlet property="pineapple" destination="mKg-sG-sY8" id="sXG-ip-9GT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Erq-Lo-lHs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3746.4000000000001" y="882.90854572713647"/>
+        </scene>
+        <!--Pick Photo-->
+        <scene sceneID="V9K-7M-YB3">
+            <objects>
+                <viewController id="vg9-Oh-xsF" customClass="pickPhoto" customModule="WeMICFinal" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6Lo-M1-8jq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dow2x" translatesAutoresizingMaskIntoConstraints="NO" id="iAp-Gw-jGI">
+                                <rect key="frame" x="149" y="20" width="76" height="94"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Make yourself look nice!" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="2hB-ZZ-XB6">
+                                <rect key="frame" x="8" y="138" width="359" height="56"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="25"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Pick your profile picture here." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="UNR-o2-Kt8">
+                                <rect key="frame" x="8" y="202" width="359" height="56"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qk8-1o-kSA">
+                                <rect key="frame" x="297" y="583" width="44" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="20"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="nexButtonPressed:" destination="vg9-Oh-xsF" eventType="touchUpInside" id="FUi-8o-etH"/>
+                                    <segue destination="YBC-DX-X1G" kind="show" id="oPI-cW-O7Q"/>
+                                </connections>
+                            </button>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Big image plus" translatesAutoresizingMaskIntoConstraints="NO" id="uph-uQ-I1i">
+                                <rect key="frame" x="68" y="291" width="238" height="238"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="ufG-2m-ckC" appends="YES" id="HAq-HO-qf1"/>
+                                </connections>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Mch-QN-Jyi"/>
+                    </view>
+                    <connections>
+                        <outlet property="header" destination="2hB-ZZ-XB6" id="87W-dF-e8s"/>
+                        <outlet property="nextButtonPressed" destination="Qk8-1o-kSA" id="khD-HG-tv7"/>
+                        <outlet property="pineapple" destination="iAp-Gw-jGI" id="Q5w-HH-PgD"/>
+                        <outlet property="profilePic" destination="uph-uQ-I1i" id="kRh-vK-Oag"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f2g-PI-mdl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer cancelsTouchesInView="NO" id="ufG-2m-ckC" userLabel="1sttapgesture">
+                    <connections>
+                        <action selector="profilePicTapGesture:" destination="vg9-Oh-xsF" id="RPJ-aU-AHQ"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="4440.8000000000002" y="883.80809595202402"/>
+        </scene>
+        <!--Additional Pictures-->
+        <scene sceneID="hOq-Oa-4wy">
+            <objects>
+                <viewController id="YBC-DX-X1G" customClass="additionalPictures" customModule="WeMICFinal" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="96C-of-x7e">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dow2x" translatesAutoresizingMaskIntoConstraints="NO" id="Dhz-uy-AHY">
+                                <rect key="frame" x="149" y="20" width="76" height="94"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Pick your other pictures!" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="qvV-Tk-mNa">
+                                <rect key="frame" x="34" y="122" width="307" height="59"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="25"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Pick your additional pictures. These will only be visible to your potential matches." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="EWx-z6-VJk">
+                                <rect key="frame" x="20" y="167" width="334" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Smaller circle plus" translatesAutoresizingMaskIntoConstraints="NO" id="lVD-3I-AaQ">
+                                <rect key="frame" x="66" y="315" width="159" height="159"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="KqV-cC-Kkv" appends="YES" id="wfR-hW-XaI"/>
+                                </connections>
+                            </imageView>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Smaller circle plus" translatesAutoresizingMaskIntoConstraints="NO" id="U7Y-bB-QXn">
+                                <rect key="frame" x="17" y="513" width="119" height="119"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="gRj-XM-JI9" appends="YES" id="YLY-Vr-vd4"/>
+                                </connections>
+                            </imageView>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Smaller circle plus" translatesAutoresizingMaskIntoConstraints="NO" id="sku-Em-Lie">
+                                <rect key="frame" x="147" y="483" width="119" height="119"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="ldG-SU-BeW" appends="YES" id="ukH-Ze-qD7"/>
+                                </connections>
+                            </imageView>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Smaller circle plus" translatesAutoresizingMaskIntoConstraints="NO" id="LjT-a1-rpl">
+                                <rect key="frame" x="236" y="386" width="119" height="119"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="Mtj-FG-Jo9" appends="YES" id="Crh-s9-PXi"/>
+                                </connections>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nJE-cJ-ju6">
+                                <rect key="frame" x="290" y="604" width="40" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="18"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="nextButtonTouched:" destination="YBC-DX-X1G" eventType="touchUpInside" id="6Zl-ky-14i"/>
+                                    <segue destination="skx-WP-5VR" kind="show" id="kkP-FC-Qkq"/>
+                                </connections>
+                            </button>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Smaller circle plus" translatesAutoresizingMaskIntoConstraints="NO" id="Ofz-Zh-QIk">
+                                <rect key="frame" x="236" y="250" width="119" height="119"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="r6s-fb-60A" appends="YES" id="ckz-0q-xWV"/>
+                                </connections>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="zG0-2x-moF"/>
+                    </view>
+                    <connections>
+                        <outlet property="actualheader" destination="qvV-Tk-mNa" id="3be-tt-Dji"/>
+                        <outlet property="header" destination="EWx-z6-VJk" id="0oN-0J-w21"/>
+                        <outlet property="image1" destination="lVD-3I-AaQ" id="1Fe-4W-ecl"/>
+                        <outlet property="image2" destination="U7Y-bB-QXn" id="nxA-bF-u1c"/>
+                        <outlet property="image3" destination="sku-Em-Lie" id="ydK-uR-fmB"/>
+                        <outlet property="image4" destination="LjT-a1-rpl" id="sQu-5W-P1N"/>
+                        <outlet property="image5" destination="Ofz-Zh-QIk" id="z33-EI-dLa"/>
+                        <outlet property="nextButton" destination="nJE-cJ-ju6" id="HQN-VZ-EjB"/>
+                        <outlet property="pineapple" destination="Dhz-uy-AHY" id="ACx-8l-d8H"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Du-ob-QbJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="KqV-cC-Kkv" userLabel="additionalPic1">
+                    <connections>
+                        <action selector="additionalPic1Tapped:" destination="YBC-DX-X1G" id="zrE-Im-954"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="ldG-SU-BeW" userLabel="additionalPic3">
+                    <connections>
+                        <action selector="pic3tapped:" destination="YBC-DX-X1G" id="8Rd-jC-Alp"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="Mtj-FG-Jo9" userLabel="additionalPic4">
+                    <connections>
+                        <action selector="pic4tapped:" destination="YBC-DX-X1G" id="myb-cq-H9t"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="gRj-XM-JI9" userLabel="pic2">
+                    <connections>
+                        <action selector="pic2Tapped:" destination="YBC-DX-X1G" id="X2H-Ea-XVS"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="r6s-fb-60A" userLabel="pic5">
+                    <connections>
+                        <action selector="pic5tapped:" destination="YBC-DX-X1G" id="m6y-km-Ast"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="5084" y="878.41079460269873"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="qFY-2V-itg">
+            <objects>
+                <viewController id="skx-WP-5VR" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pDr-gU-AWg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="YBk-Ee-p0W"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3zn-cf-ZI4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5884" y="894"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="gKn-aH-uPu">
+            <objects>
+                <viewController storyboardIdentifier="userhomepage" id="JPv-Yq-igQ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="q6l-8B-8lT" customClass="UserHomePage" customModule="WeMICFinal" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="T9K-vk-7O9"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="k7D-Vr-D5F" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1724" y="125.4872563718141"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Xkw-wC-oqe">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="4zl-7J-Yrf" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="R2s-Bc-uuK">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="jYi-T1-K30"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pdp-bo-Aow" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="107.49625187406298"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Big image plus" width="206" height="206"/>
+        <image name="Smaller circle plus" width="105" height="105"/>
+        <image name="dow2x" width="184" height="245"/>
+        <image name="lock-xxl" width="256" height="256"/>
+        <image name="tree-70-xxl" width="256" height="256"/>
+    </resources>
+</document>

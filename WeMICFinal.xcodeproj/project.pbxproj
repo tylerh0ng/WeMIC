@@ -1,0 +1,464 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		431F50D620FB079500316876 /* classYear.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431F50D520FB079500316876 /* classYear.swift */; };
+		431F50D820FC019E00316876 /* sexAndSexualOrietnation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431F50D720FC019E00316876 /* sexAndSexualOrietnation.swift */; };
+		431F50DA20FD60D600316876 /* SexualPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431F50D920FD60D600316876 /* SexualPreferences.swift */; };
+		4322BED7210167200095433D /* additionalPictures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4322BED6210167200095433D /* additionalPictures.swift */; };
+		4326040120F9E2FF0061FAF6 /* emailVerificationMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4326040020F9E2FF0061FAF6 /* emailVerificationMessage.swift */; };
+		4326040320FA82310061FAF6 /* nameRegister.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4326040220FA82310061FAF6 /* nameRegister.swift */; };
+		43623F3C20F6918A00BEEDE9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43623F3B20F6918A00BEEDE9 /* AppDelegate.swift */; };
+		43623F3E20F6918A00BEEDE9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43623F3D20F6918A00BEEDE9 /* ViewController.swift */; };
+		43623F4120F6918A00BEEDE9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43623F3F20F6918A00BEEDE9 /* Main.storyboard */; };
+		43623F4320F6918F00BEEDE9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43623F4220F6918F00BEEDE9 /* Assets.xcassets */; };
+		43623F4620F6918F00BEEDE9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43623F4420F6918F00BEEDE9 /* LaunchScreen.storyboard */; };
+		43623F4E20F6961800BEEDE9 /* Raleway-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 43623F4D20F6961700BEEDE9 /* Raleway-Regular.ttf */; };
+		4394DEBA20F807700065FAF4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4394DEB920F807700065FAF4 /* GoogleService-Info.plist */; };
+		4394DEBC20F8341C0065FAF4 /* UserHomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4394DEBB20F8341C0065FAF4 /* UserHomePage.swift */; };
+		4394DEC620F940760065FAF4 /* 1ststepregViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4394DEC520F940760065FAF4 /* 1ststepregViewController.swift */; };
+		43A1702F20FF1F5A008E678D /* pickPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A1702E20FF1F5A008E678D /* pickPhoto.swift */; };
+		D11FC21148342E574DDD3C5A /* Pods_WeMICFinal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4736FC387F0D03447F5B313 /* Pods_WeMICFinal.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		431F50D520FB079500316876 /* classYear.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = classYear.swift; sourceTree = "<group>"; };
+		431F50D720FC019E00316876 /* sexAndSexualOrietnation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sexAndSexualOrietnation.swift; sourceTree = "<group>"; };
+		431F50D920FD60D600316876 /* SexualPreferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SexualPreferences.swift; sourceTree = "<group>"; };
+		4322BED6210167200095433D /* additionalPictures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = additionalPictures.swift; sourceTree = "<group>"; };
+		4326040020F9E2FF0061FAF6 /* emailVerificationMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = emailVerificationMessage.swift; sourceTree = "<group>"; };
+		4326040220FA82310061FAF6 /* nameRegister.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nameRegister.swift; sourceTree = "<group>"; };
+		43623F3820F6918A00BEEDE9 /* WeMICFinal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeMICFinal.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		43623F3B20F6918A00BEEDE9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		43623F3D20F6918A00BEEDE9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		43623F4020F6918A00BEEDE9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		43623F4220F6918F00BEEDE9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		43623F4520F6918F00BEEDE9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		43623F4720F6918F00BEEDE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		43623F4D20F6961700BEEDE9 /* Raleway-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Raleway-Regular.ttf"; path = "../../../Downloads/Raleway/Raleway-Regular.ttf"; sourceTree = "<group>"; };
+		4394DEB920F807700065FAF4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		4394DEBB20F8341C0065FAF4 /* UserHomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserHomePage.swift; sourceTree = "<group>"; };
+		4394DEC520F940760065FAF4 /* 1ststepregViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = 1ststepregViewController.swift; sourceTree = "<group>"; };
+		4394DEC720F942840065FAF4 /* Raleway-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Regular.ttf"; sourceTree = "<group>"; };
+		43A1702E20FF1F5A008E678D /* pickPhoto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pickPhoto.swift; sourceTree = "<group>"; };
+		82E47375DD9F31196D0DF73B /* Pods-WeMICFinal.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeMICFinal.release.xcconfig"; path = "Pods/Target Support Files/Pods-WeMICFinal/Pods-WeMICFinal.release.xcconfig"; sourceTree = "<group>"; };
+		A4BAD3CB6F0013AA8D95D565 /* Pods-WeMICFinal.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeMICFinal.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WeMICFinal/Pods-WeMICFinal.debug.xcconfig"; sourceTree = "<group>"; };
+		C4736FC387F0D03447F5B313 /* Pods_WeMICFinal.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WeMICFinal.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		43623F3520F6918A00BEEDE9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D11FC21148342E574DDD3C5A /* Pods_WeMICFinal.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		43623F2F20F6918A00BEEDE9 = {
+			isa = PBXGroup;
+			children = (
+				43623F3A20F6918A00BEEDE9 /* WeMICFinal */,
+				43623F3920F6918A00BEEDE9 /* Products */,
+				84F8F613C0AB36F36DDC673E /* Pods */,
+				C76674DC414A671EB36A47A4 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		43623F3920F6918A00BEEDE9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				43623F3820F6918A00BEEDE9 /* WeMICFinal.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		43623F3A20F6918A00BEEDE9 /* WeMICFinal */ = {
+			isa = PBXGroup;
+			children = (
+				4394DEC520F940760065FAF4 /* 1ststepregViewController.swift */,
+				4326040020F9E2FF0061FAF6 /* emailVerificationMessage.swift */,
+				43623F3B20F6918A00BEEDE9 /* AppDelegate.swift */,
+				43623F3D20F6918A00BEEDE9 /* ViewController.swift */,
+				43623F3F20F6918A00BEEDE9 /* Main.storyboard */,
+				431F50D520FB079500316876 /* classYear.swift */,
+				431F50D720FC019E00316876 /* sexAndSexualOrietnation.swift */,
+				431F50D920FD60D600316876 /* SexualPreferences.swift */,
+				4326040220FA82310061FAF6 /* nameRegister.swift */,
+				4394DEBB20F8341C0065FAF4 /* UserHomePage.swift */,
+				43623F4D20F6961700BEEDE9 /* Raleway-Regular.ttf */,
+				4394DEC720F942840065FAF4 /* Raleway-Regular.ttf */,
+				43623F4220F6918F00BEEDE9 /* Assets.xcassets */,
+				43623F4420F6918F00BEEDE9 /* LaunchScreen.storyboard */,
+				43623F4720F6918F00BEEDE9 /* Info.plist */,
+				4394DEB920F807700065FAF4 /* GoogleService-Info.plist */,
+				43A1702E20FF1F5A008E678D /* pickPhoto.swift */,
+				4322BED6210167200095433D /* additionalPictures.swift */,
+			);
+			path = WeMICFinal;
+			sourceTree = "<group>";
+		};
+		84F8F613C0AB36F36DDC673E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A4BAD3CB6F0013AA8D95D565 /* Pods-WeMICFinal.debug.xcconfig */,
+				82E47375DD9F31196D0DF73B /* Pods-WeMICFinal.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C76674DC414A671EB36A47A4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C4736FC387F0D03447F5B313 /* Pods_WeMICFinal.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		43623F3720F6918A00BEEDE9 /* WeMICFinal */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 43623F4A20F6918F00BEEDE9 /* Build configuration list for PBXNativeTarget "WeMICFinal" */;
+			buildPhases = (
+				5FD3D0E52BA0F25E5BBD9952 /* [CP] Check Pods Manifest.lock */,
+				43623F3420F6918A00BEEDE9 /* Sources */,
+				43623F3520F6918A00BEEDE9 /* Frameworks */,
+				43623F3620F6918A00BEEDE9 /* Resources */,
+				A6B4FE97773FB1A8C657690D /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WeMICFinal;
+			productName = WeMICFinal;
+			productReference = 43623F3820F6918A00BEEDE9 /* WeMICFinal.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		43623F3020F6918A00BEEDE9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = AlexLee;
+				TargetAttributes = {
+					43623F3720F6918A00BEEDE9 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 43623F3320F6918A00BEEDE9 /* Build configuration list for PBXProject "WeMICFinal" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 43623F2F20F6918A00BEEDE9;
+			productRefGroup = 43623F3920F6918A00BEEDE9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				43623F3720F6918A00BEEDE9 /* WeMICFinal */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		43623F3620F6918A00BEEDE9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43623F4620F6918F00BEEDE9 /* LaunchScreen.storyboard in Resources */,
+				43623F4320F6918F00BEEDE9 /* Assets.xcassets in Resources */,
+				43623F4120F6918A00BEEDE9 /* Main.storyboard in Resources */,
+				43623F4E20F6961800BEEDE9 /* Raleway-Regular.ttf in Resources */,
+				4394DEBA20F807700065FAF4 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5FD3D0E52BA0F25E5BBD9952 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WeMICFinal-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A6B4FE97773FB1A8C657690D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-WeMICFinal/Pods-WeMICFinal-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AIFlatSwitch/AIFlatSwitch.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/ImagePicker/ImagePicker.framework",
+				"${BUILT_PRODUCTS_DIR}/SkyFloatingLabelTextField/SkyFloatingLabelTextField.framework",
+				"${BUILT_PRODUCTS_DIR}/TextFieldEffects/TextFieldEffects.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AIFlatSwitch.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ImagePicker.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SkyFloatingLabelTextField.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TextFieldEffects.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WeMICFinal/Pods-WeMICFinal-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		43623F3420F6918A00BEEDE9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4394DEC620F940760065FAF4 /* 1ststepregViewController.swift in Sources */,
+				431F50D820FC019E00316876 /* sexAndSexualOrietnation.swift in Sources */,
+				4326040120F9E2FF0061FAF6 /* emailVerificationMessage.swift in Sources */,
+				4322BED7210167200095433D /* additionalPictures.swift in Sources */,
+				43623F3E20F6918A00BEEDE9 /* ViewController.swift in Sources */,
+				4326040320FA82310061FAF6 /* nameRegister.swift in Sources */,
+				4394DEBC20F8341C0065FAF4 /* UserHomePage.swift in Sources */,
+				431F50DA20FD60D600316876 /* SexualPreferences.swift in Sources */,
+				43A1702F20FF1F5A008E678D /* pickPhoto.swift in Sources */,
+				431F50D620FB079500316876 /* classYear.swift in Sources */,
+				43623F3C20F6918A00BEEDE9 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		43623F3F20F6918A00BEEDE9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				43623F4020F6918A00BEEDE9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		43623F4420F6918F00BEEDE9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				43623F4520F6918F00BEEDE9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		43623F4820F6918F00BEEDE9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		43623F4920F6918F00BEEDE9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		43623F4B20F6918F00BEEDE9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A4BAD3CB6F0013AA8D95D565 /* Pods-WeMICFinal.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WeMICFinal/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.AlexLee.WeMICFinal;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		43623F4C20F6918F00BEEDE9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 82E47375DD9F31196D0DF73B /* Pods-WeMICFinal.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WeMICFinal/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.AlexLee.WeMICFinal;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		43623F3320F6918A00BEEDE9 /* Build configuration list for PBXProject "WeMICFinal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43623F4820F6918F00BEEDE9 /* Debug */,
+				43623F4920F6918F00BEEDE9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		43623F4A20F6918F00BEEDE9 /* Build configuration list for PBXNativeTarget "WeMICFinal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43623F4B20F6918F00BEEDE9 /* Debug */,
+				43623F4C20F6918F00BEEDE9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 43623F3020F6918A00BEEDE9 /* Project object */;
+}

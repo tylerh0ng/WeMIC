@@ -1,0 +1,44 @@
+//
+//  1ststepregViewController.swift
+//  
+//
+//  Created by Tasha Mallow on 7/12/18.
+//
+
+import UIKit
+
+class _ststepregViewController: UIViewController {
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        setUpGradient()
+       
+    }
+
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    func setUpGradient(){
+        let topColor=UIColor(red: 255/255, green: 149/255, blue: 56/255, alpha: 1)
+        let bottomColor=UIColor(red: 216/255, green: 57/255, blue: 177/255, alpha: 1)
+        let gradientColors: [CGColor]=[topColor.cgColor,bottomColor.cgColor]
+        var gradientLayer = CAGradientLayer()
+        gradientLayer.frame = self.view.bounds
+        gradientLayer.colors=gradientColors
+        gradientLayer.startPoint=CGPoint(x: 0, y:0)
+        gradientLayer.endPoint=CGPoint(x: 0, y:1)
+        self.view.layer.addSublayer(gradientLayer)
+    }
+
+    /*
+    // MARK: - Navigation
+
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destinationViewController.
+        // Pass the selected object to the new view controller.
+    }
+    */
+
+}
