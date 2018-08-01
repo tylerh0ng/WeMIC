@@ -11,14 +11,16 @@
 		431F50D820FC019E00316876 /* sexAndSexualOrietnation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431F50D720FC019E00316876 /* sexAndSexualOrietnation.swift */; };
 		431F50DA20FD60D600316876 /* SexualPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431F50D920FD60D600316876 /* SexualPreferences.swift */; };
 		4322BED7210167200095433D /* additionalPictures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4322BED6210167200095433D /* additionalPictures.swift */; };
+		432592E02105B36F00F69027 /* matchStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432592DF2105B36F00F69027 /* matchStream.swift */; };
 		4326040120F9E2FF0061FAF6 /* emailVerificationMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4326040020F9E2FF0061FAF6 /* emailVerificationMessage.swift */; };
 		4326040320FA82310061FAF6 /* nameRegister.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4326040220FA82310061FAF6 /* nameRegister.swift */; };
+		433849372111636900C1DAA4 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 433849362111636800C1DAA4 /* CollectionViewCell.swift */; };
 		43623F3C20F6918A00BEEDE9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43623F3B20F6918A00BEEDE9 /* AppDelegate.swift */; };
 		43623F3E20F6918A00BEEDE9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43623F3D20F6918A00BEEDE9 /* ViewController.swift */; };
 		43623F4120F6918A00BEEDE9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43623F3F20F6918A00BEEDE9 /* Main.storyboard */; };
 		43623F4320F6918F00BEEDE9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43623F4220F6918F00BEEDE9 /* Assets.xcassets */; };
 		43623F4620F6918F00BEEDE9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43623F4420F6918F00BEEDE9 /* LaunchScreen.storyboard */; };
-		43623F4E20F6961800BEEDE9 /* Raleway-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 43623F4D20F6961700BEEDE9 /* Raleway-Regular.ttf */; };
+		43875F1D2110FF8900615D72 /* Raleway-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 43875F1C2110FF8700615D72 /* Raleway-Regular.ttf */; };
 		4394DEBA20F807700065FAF4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4394DEB920F807700065FAF4 /* GoogleService-Info.plist */; };
 		4394DEBC20F8341C0065FAF4 /* UserHomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4394DEBB20F8341C0065FAF4 /* UserHomePage.swift */; };
 		4394DEC620F940760065FAF4 /* 1ststepregViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4394DEC520F940760065FAF4 /* 1ststepregViewController.swift */; };
@@ -31,8 +33,10 @@
 		431F50D720FC019E00316876 /* sexAndSexualOrietnation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sexAndSexualOrietnation.swift; sourceTree = "<group>"; };
 		431F50D920FD60D600316876 /* SexualPreferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SexualPreferences.swift; sourceTree = "<group>"; };
 		4322BED6210167200095433D /* additionalPictures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = additionalPictures.swift; sourceTree = "<group>"; };
+		432592DF2105B36F00F69027 /* matchStream.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = matchStream.swift; sourceTree = "<group>"; };
 		4326040020F9E2FF0061FAF6 /* emailVerificationMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = emailVerificationMessage.swift; sourceTree = "<group>"; };
 		4326040220FA82310061FAF6 /* nameRegister.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nameRegister.swift; sourceTree = "<group>"; };
+		433849362111636800C1DAA4 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CollectionViewCell.swift; path = ../CollectionViewCell.swift; sourceTree = "<group>"; };
 		43623F3820F6918A00BEEDE9 /* WeMICFinal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeMICFinal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43623F3B20F6918A00BEEDE9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		43623F3D20F6918A00BEEDE9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -40,11 +44,10 @@
 		43623F4220F6918F00BEEDE9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		43623F4520F6918F00BEEDE9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		43623F4720F6918F00BEEDE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		43623F4D20F6961700BEEDE9 /* Raleway-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Raleway-Regular.ttf"; path = "../../../Downloads/Raleway/Raleway-Regular.ttf"; sourceTree = "<group>"; };
+		43875F1C2110FF8700615D72 /* Raleway-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Regular.ttf"; sourceTree = "<group>"; };
 		4394DEB920F807700065FAF4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		4394DEBB20F8341C0065FAF4 /* UserHomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserHomePage.swift; sourceTree = "<group>"; };
 		4394DEC520F940760065FAF4 /* 1ststepregViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = 1ststepregViewController.swift; sourceTree = "<group>"; };
-		4394DEC720F942840065FAF4 /* Raleway-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Regular.ttf"; sourceTree = "<group>"; };
 		43A1702E20FF1F5A008E678D /* pickPhoto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pickPhoto.swift; sourceTree = "<group>"; };
 		82E47375DD9F31196D0DF73B /* Pods-WeMICFinal.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeMICFinal.release.xcconfig"; path = "Pods/Target Support Files/Pods-WeMICFinal/Pods-WeMICFinal.release.xcconfig"; sourceTree = "<group>"; };
 		A4BAD3CB6F0013AA8D95D565 /* Pods-WeMICFinal.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeMICFinal.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WeMICFinal/Pods-WeMICFinal.debug.xcconfig"; sourceTree = "<group>"; };
@@ -89,19 +92,20 @@
 				43623F3B20F6918A00BEEDE9 /* AppDelegate.swift */,
 				43623F3D20F6918A00BEEDE9 /* ViewController.swift */,
 				43623F3F20F6918A00BEEDE9 /* Main.storyboard */,
+				433849362111636800C1DAA4 /* CollectionViewCell.swift */,
 				431F50D520FB079500316876 /* classYear.swift */,
 				431F50D720FC019E00316876 /* sexAndSexualOrietnation.swift */,
+				43875F1C2110FF8700615D72 /* Raleway-Regular.ttf */,
 				431F50D920FD60D600316876 /* SexualPreferences.swift */,
 				4326040220FA82310061FAF6 /* nameRegister.swift */,
 				4394DEBB20F8341C0065FAF4 /* UserHomePage.swift */,
-				43623F4D20F6961700BEEDE9 /* Raleway-Regular.ttf */,
-				4394DEC720F942840065FAF4 /* Raleway-Regular.ttf */,
 				43623F4220F6918F00BEEDE9 /* Assets.xcassets */,
 				43623F4420F6918F00BEEDE9 /* LaunchScreen.storyboard */,
 				43623F4720F6918F00BEEDE9 /* Info.plist */,
 				4394DEB920F807700065FAF4 /* GoogleService-Info.plist */,
 				43A1702E20FF1F5A008E678D /* pickPhoto.swift */,
 				4322BED6210167200095433D /* additionalPictures.swift */,
+				432592DF2105B36F00F69027 /* matchStream.swift */,
 			);
 			path = WeMICFinal;
 			sourceTree = "<group>";
@@ -184,9 +188,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				43623F4620F6918F00BEEDE9 /* LaunchScreen.storyboard in Resources */,
+				43875F1D2110FF8900615D72 /* Raleway-Regular.ttf in Resources */,
 				43623F4320F6918F00BEEDE9 /* Assets.xcassets in Resources */,
 				43623F4120F6918A00BEEDE9 /* Main.storyboard in Resources */,
-				43623F4E20F6961800BEEDE9 /* Raleway-Regular.ttf in Resources */,
 				4394DEBA20F807700065FAF4 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,7 +263,9 @@
 				4326040320FA82310061FAF6 /* nameRegister.swift in Sources */,
 				4394DEBC20F8341C0065FAF4 /* UserHomePage.swift in Sources */,
 				431F50DA20FD60D600316876 /* SexualPreferences.swift in Sources */,
+				433849372111636900C1DAA4 /* CollectionViewCell.swift in Sources */,
 				43A1702F20FF1F5A008E678D /* pickPhoto.swift in Sources */,
+				432592E02105B36F00F69027 /* matchStream.swift in Sources */,
 				431F50D620FB079500316876 /* classYear.swift in Sources */,
 				43623F3C20F6918A00BEEDE9 /* AppDelegate.swift in Sources */,
 			);

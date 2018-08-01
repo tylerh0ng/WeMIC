@@ -16,7 +16,7 @@ class nameRegister: UIViewController {
     @IBAction func nextButtonTapped(_ sender: Any) {
         let currentUser=Auth.auth().currentUser!
         let myDatabase=Database.database().reference()
-        myDatabase.child("Users").child(currentUser.uid).child("User's full name").setValue(firstName.text!+""+lastName.text!)
+        myDatabase.child("Users").child(currentUser.uid).child("User's full name").setValue(firstName.text!+" "+lastName.text!)
         performSegue(withIdentifier: "majorAndYear", sender: sender)
         
         
