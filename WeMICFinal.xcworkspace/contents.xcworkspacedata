@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:CollectionViewCell.swift">
+   </FileRef>
+   <FileRef
       location = "group:1ststepregViewController.swift">
    </FileRef>
    <FileRef

@@ -282,32 +282,6 @@
             </objects>
             <point key="canvasLocation" x="1629.5999999999999" y="892.80359820089961"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="Mzs-h3-9VV">
-            <objects>
-                <viewController id="FH5-Nu-3vK" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Q71-Le-U1g">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bkv-u5-Jdu">
-                                <rect key="frame" x="119" y="152" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <gestureRecognizers/>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="K6f-c8-6Zs" appends="YES" id="wiH-Q3-5HP"/>
-                                </connections>
-                            </imageView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="yvo-hx-bAF"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="1aq-Od-s3D" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="K6f-c8-6Zs"/>
-            </objects>
-            <point key="canvasLocation" x="1805" y="1733"/>
-        </scene>
         <!--Class Year-->
         <scene sceneID="NM2-BS-v9t">
             <objects>
@@ -690,7 +664,7 @@
                                     <segue destination="vg9-Oh-xsF" kind="show" id="KtL-Fr-VgO"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" text="Female" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="hMZ-lk-4UC">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Female" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="hMZ-lk-4UC">
                                 <rect key="frame" x="106" y="423" width="166" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -851,7 +825,7 @@
                                 </state>
                                 <connections>
                                     <action selector="nextButtonTouched:" destination="YBC-DX-X1G" eventType="touchUpInside" id="6Zl-ky-14i"/>
-                                    <segue destination="skx-WP-5VR" kind="show" id="kkP-FC-Qkq"/>
+                                    <segue destination="cKU-W2-Cmc" kind="show" id="kkP-FC-Qkq"/>
                                 </connections>
                             </button>
                             <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Smaller circle plus" translatesAutoresizingMaskIntoConstraints="NO" id="Ofz-Zh-QIk">
@@ -907,20 +881,121 @@
             </objects>
             <point key="canvasLocation" x="5084" y="878.41079460269873"/>
         </scene>
-        <!--View Controller-->
+        <!--Match-->
         <scene sceneID="qFY-2V-itg">
             <objects>
                 <viewController id="skx-WP-5VR" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pDr-gU-AWg">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wap-Xv-hjK">
+                                <rect key="frame" x="139" y="531" width="96" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Match Stream">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="SHL-NL-xfj" kind="show" id="Ye5-2I-tDr"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="YBk-Ee-p0W"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Match" id="2k1-Dt-ryz"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3zn-cf-ZI4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5884" y="894"/>
+            <point key="canvasLocation" x="6823.1999999999998" y="893.70314842578716"/>
+        </scene>
+        <!--WeMIC Stream-->
+        <scene sceneID="M3h-mX-TQG">
+            <objects>
+                <viewController id="SHL-NL-xfj" customClass="matchStream" customModule="WeMICFinal" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZYy-m8-J4x">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ka1-tu-UfQ">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Of9-Ou-H3Z">
+                                    <size key="itemSize" width="360" height="648"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="revisedCell" id="ICe-x0-HA0" customClass="CollectionViewCell" customModule="WeMICFinal" customModuleProvider="target">
+                                        <rect key="frame" x="7.5" y="0.0" width="360" height="648"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="360" height="648"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="EjL-9s-Vfn">
+                                                    <rect key="frame" x="61" y="73" width="240" height="55"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </stackView>
+                                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5yf-7n-v8y">
+                                                    <rect key="frame" x="20" y="84" width="320" height="467"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <subviews>
+                                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Name" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="0ME-J9-MH1">
+                                                            <rect key="frame" x="40" y="21" width="240" height="39"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="25"/>
+                                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                        </textView>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Sc7-Oo-Uws">
+                                                            <rect key="frame" x="40" y="81" width="240" height="240"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        </imageView>
+                                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Year | Major" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="NY6-ed-d8i">
+                                                            <rect key="frame" x="40" y="339" width="240" height="50"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="25"/>
+                                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                        </textView>
+                                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Hometown" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="gUv-FV-NmT">
+                                                            <rect key="frame" x="40" y="394" width="240" height="50"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="25"/>
+                                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                        </textView>
+                                                    </subviews>
+                                                    <color key="backgroundColor" red="0.89106123100000001" green="0.89106123100000001" blue="0.89106123100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </view>
+                                            </subviews>
+                                        </view>
+                                        <size key="customSize" width="360" height="648"/>
+                                        <connections>
+                                            <outlet property="hometown" destination="gUv-FV-NmT" id="P0Q-Pb-PR3"/>
+                                            <outlet property="name" destination="0ME-J9-MH1" id="hgJ-Kq-BKr"/>
+                                            <outlet property="profPic" destination="Sc7-Oo-Uws" id="Itg-wB-fdz"/>
+                                            <outlet property="yearAndMajor" destination="NY6-ed-d8i" id="rIQ-oU-2X8"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="SHL-NL-xfj" id="Shy-hj-R0V"/>
+                                    <outlet property="delegate" destination="SHL-NL-xfj" id="vhJ-t8-dw3"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="zXB-ea-33Y"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="WeMIC Stream" id="db8-9S-HSY"/>
+                    <connections>
+                        <outlet property="collectionView" destination="ka1-tu-UfQ" id="uvc-c9-r2X"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="raq-sy-Spn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6476" y="1581.8590704647677"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="gKn-aH-uPu">
@@ -953,6 +1028,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pdp-bo-Aow" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="107.49625187406298"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="PYG-iW-zjI">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="cKU-W2-Cmc" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="QAX-H6-PIw">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="skx-WP-5VR" kind="relationship" relationship="viewControllers" id="xLS-Jj-2ds"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hw7-cG-Blc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5884" y="893.70314842578716"/>
         </scene>
     </scenes>
     <resources>

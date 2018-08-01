@@ -43,25 +43,26 @@ class SexualPreferences: UIViewController {
                 self.present(alert,animated:true,completion:nil)
             }
             else{
+                let userID=Auth.auth().currentUser!.uid
                 self.getSelectedButton()
                 databaseRef.child("Users").child(Auth.auth().currentUser!.uid).child("AttractedTo").setValue(self.selectedButtonText)
-                if (self.selectedButtonText == "Male") && (self.universalGender == "Female"){
-                    databaseRef.child("FemalesAttractedToMales").child(Auth.auth().currentUser!.uid).setValue(Auth.auth().currentUser!.uid)
+                if ((self.selectedButtonText == "Male") || (self.selectedButtonText == "Both")) && (self.universalGender == "Female"){ //straight guys draw from this pool
+                    databaseRef.child("BiFemaleStraightFemale").child(userID).setValue(Auth.auth().currentUser!.uid)
                 }
-                if (self.selectedButtonText == "Female") && (self.universalGender == "Male"){
-                    Database.database().reference().child("MalesAttractedToFemales").child(Auth.auth().currentUser!.uid).setValue(Auth.auth().currentUser!.uid)
+                if ((self.selectedButtonText == "Female") || (self.selectedButtonText == "Both")) && (self.universalGender == "Male"){ //straight girls draw from this pool
+                    Database.database().reference().child("BiMaleStraightMale").child(userID).setValue(Auth.auth().currentUser!.uid)
                 }
-                if (self.selectedButtonText == "Male") && (self.universalGender == "Male"){
-                    databaseRef.child("MalesAttractedToMales").child(Auth.auth().currentUser!.uid).setValue(Auth.auth().currentUser!.uid)
+                if ((self.selectedButtonText == "Female") && (self.universalGender == "Male")) || ((self.selectedButtonText == "Female") && (self.universalGender == "Female")) || ((self.selectedButtonText == "Both") && (self.universalGender == "Female")) { //bi girls draw from this pool
+                    databaseRef.child("StraightMaleGayFemaleBiFemale").child(userID).setValue(Auth.auth().currentUser!.uid)
                 }
-                if (self.selectedButtonText == "Female") && (self.universalGender == "Female"){
-                    databaseRef.child("FemalesAttractedToFemales").child(Auth.auth().currentUser!.uid).setValue(Auth.auth().currentUser!.uid)
+                if ((self.selectedButtonText == "Female") || (self.selectedButtonText == "Both")) && (self.universalGender == "Female"){ //gay girls draw from this pool
+                    databaseRef.child("BiFemaleGayFemale").child(userID).setValue(Auth.auth().currentUser!.uid)
                 }
-                if (self.selectedButtonText == "Both") && (self.universalGender == "Male"){
-                    databaseRef.child("MalesAttractedToBoth").child(Auth.auth().currentUser!.uid).setValue(Auth.auth().currentUser!.uid)
+                if ((self.selectedButtonText == "Both") && (self.universalGender == "Male")) || ((self.selectedButtonText == "Male") && (self.universalGender == "Female")) || ((self.selectedButtonText == "Male") && (self.universalGender == "Male")){ //bi guys draw from this pool
+                    databaseRef.child("GayMaleStraightFemaleBiMale").child(userID).setValue(Auth.auth().currentUser!.uid)
                 }
-                if (self.selectedButtonText == "Both") && (self.universalGender == "Female"){
-                    databaseRef.child("FemalesAttractedToBoth").child(Auth.auth().currentUser!.uid).setValue(Auth.auth().currentUser!.uid)
+                if ((self.selectedButtonText == "Male") || (self.selectedButtonText == "Both")) && (self.universalGender == "Male"){ //gay guys draw from this pool
+                    databaseRef.child("GayMaleBiMale").child(userID).setValue(Auth.auth().currentUser!.uid)
                 }
                 
             }
