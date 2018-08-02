@@ -14,4 +14,6 @@ class CollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var yearAndMajor: UITextView!
     @IBOutlet weak var profPic: UIImageView!
     @IBOutlet weak var name: UITextView!
+    
+    //this is a test
 }
